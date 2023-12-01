@@ -1,0 +1,6 @@
+<% @restaurants.each do |restaurant| %> <% "# elle contient un array d'instance de restaurants" %>
+  <p><%= restaurant.name %></p>
+  <p><%= restaurant.address %></p>
+  <p><%= restaurant.rating %>/5</p>
+  <a href='/restaurants/<%= restaurant.id %>'>Voir le restaurantw</a>
+<% end %>
